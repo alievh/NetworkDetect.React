@@ -2,30 +2,30 @@
 @import "../abstracts/mixins";
 
 .navbar-logo {
-@include flex(left, center);
-overflow: hidden;
+  @include flex(left, center);
+  overflow: hidden;
   a {
     color: #121212;
     text-decoration: none;
 
     h4 {
-        font-size: 32px;
+      font-size: 32px;
 
-        &:after {
-            content: "";
-            display: block;
-            background-color: $hover-color;
-            height: 2px;
-            position: relative;
-            left: -200px;
+      &:after {
+        content: "";
+        display: block;
+        background-color: $hover-color;
+        height: 2px;
+        position: relative;
+        left: -200px;
 
-            transition: 0.3s ease-out;
-        }
+        transition: 0.3s ease-out;
+      }
 
-        &:hover:after {
-            left: 0px;
-            transition: 0.3s ease-in;
-        }
+      &:hover:after {
+        left: 0px;
+        transition: 0.3s ease-in;
+      }
     }
 
     &:hover {

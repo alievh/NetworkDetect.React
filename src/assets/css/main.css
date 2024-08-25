@@ -156,6 +156,70 @@
   border: 3px solid #64ecf5;
 }
 
+.authorization {
+  margin: 40px 0;
+  position: relative;
+}
+
+.authorization_title h5 {
+  font-size: 32px;
+  color: #121212;
+  font-weight: 700;
+}
+
+.authorization_title p {
+  color: #797b7e;
+  font-size: 14px;
+}
+
+.authorization_form div {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.authorization_form div label {
+  color: #797b7e;
+  font-size: 14px;
+}
+
+.authorization_form div input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  color: #797b7e;
+  box-shadow: none;
+  border: solid 1px #cccccc;
+  height: 3.125rem;
+}
+
+.authorization_form div button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.813rem;
+  line-height: 1.125;
+  padding: 1.04rem 1rem;
+  border-radius: 6px;
+  background-color: #1cebbc;
+  width: 100%;
+  margin-top: 40px;
+  border: 1px solid #1cebbc;
+  color: #fff;
+}
+
+.authorization_divider:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #797b7e;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .navbar-logo {
   display: flex;
   justify-content: left;
