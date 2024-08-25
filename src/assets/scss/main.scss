@@ -3,5 +3,17 @@
 @import "./vendors/bootstrap";
 @import "./base/reset";
 @import "./base/typography";
-@import "./components/navbarMenu";
-@import "./components/navbarLogo";
+
+// Components
+@import "./components/rightsReserved";
+@import "./components/pageTitle";
+@import "./components/singleProduct";
+
+//Layouts
+@import "./layouts/navbarLogo";
+@import "./layouts/navbarMenu";
+
+// Pages
+@import "./pages/navbar";
+@import "./pages/footer";
+@import "./pages/collections";

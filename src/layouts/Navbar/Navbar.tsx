@@ -12,9 +12,9 @@ import NavbarLogo from '../../components/Navbar/NavbarLogo.tsx'
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav id="navbar">
         <ContainerFluid>
-            <Row>
+            <Row className="d-flex justify-content-between align-items-center">
                 <Col lg="3">
                     <NavbarLogo />
                 </Col>

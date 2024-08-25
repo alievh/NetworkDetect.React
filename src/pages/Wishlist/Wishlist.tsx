@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import PageTitle from "../../components/UI/PageTitle.tsx";
 
 const Wishlist = () => {
   return (
-    <div>Wishlist</div>
-  )
-}
+    <section className="page-title">
+      <PageTitle title="Wishlist" />
+    </section>
+  );
+};
 
-export default Wishlist
+export default Wishlist;

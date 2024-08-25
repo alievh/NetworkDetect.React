@@ -1,0 +1,8 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+#footer {
+  @include flex(center, center);
+  background-color: $color-grey-1;
+  padding: 10px 0;
+}

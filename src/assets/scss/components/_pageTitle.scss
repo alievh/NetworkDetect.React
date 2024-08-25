@@ -1,0 +1,12 @@
+.page-title {
+    @include flex(center, center);
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 40px;
+    background-color: $color-grey-1;
+    
+    h2 {
+        font-weight: 900;
+        font-size: 48px;
+    }
+}

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import PageTitle from "../../components/UI/PageTitle.tsx";
 
 const Cart = () => {
   return (
-    <div>Cart</div>
-  )
-}
+    <section className="page-title">
+      <PageTitle title="Cart" />
+    </section>
+  );
+};
 
-export default Cart
+export default Cart;

@@ -6,13 +6,13 @@ import Navbar from "./layouts/Navbar/Navbar.tsx";
 const Layout = () => {
   return (
     <>
-      <header>
+      <header id="header">
         <Navbar />
       </header>
-      <main>
+      <main id="main">
         <Outlet />
       </main>
-      <footer>
+      <footer id="footer">
         <Footer />
       </footer>
     </>

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import PageTitle from "../../components/UI/PageTitle.tsx";
 
 const Account = () => {
   return (
-    <div>Account</div>
-  )
-}
+    <section className="page-title">
+      <PageTitle title="Account" />
+    </section>
+  );
+};
 
-export default Account
+export default Account;

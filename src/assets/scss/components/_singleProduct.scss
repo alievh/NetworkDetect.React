@@ -1,0 +1,116 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.single-product {
+  @include flex(center, center);
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 24px;
+
+  &_photo {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+      transition: 0.3s ease-out;
+
+      &:hover ~ .single-product_actions {
+        left: 0px;
+        transition: 0.3s ease-out;
+      }
+    }
+
+    &-new {
+      @include flex(center, center);
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      background-color: $black;
+      color: $white;
+      left: 0;
+      top: 5px;
+    }
+  }
+
+  &_about {
+    @include flex(center, center);
+    flex-direction: column;
+
+    &-title {
+      margin: 10px 0 5px 0;
+      color: #121212;
+      transition: 0.3s ease-in;
+      overflow: hidden;
+      text-decoration: none;
+
+      &:after {
+        content: "";
+        display: block;
+        background-color: $hover-color;
+        height: 2px;
+        position: relative;
+        top: -2px;
+        left: -200px;
+        transition: 0.3s ease-out;
+      }
+
+      &:hover {
+        color: $hover-color;
+        transition: 0.3s ease-out;
+
+        &:after {
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &_actions {
+    @include flex(center, center);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: -300px;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      left: 0;
+      transition: 0.3s ease-out;
+    }
+
+    div {
+      @include flex(center, center);
+      width: 50px;
+      height: 50px;
+      margin: 0 5px;
+
+      a {
+        @include flex(center, center);
+        width: 0px;
+        height: 0px;
+        border: 3px solid $white;
+        border-radius: 50%;
+        text-decoration: none;
+        color: $white;
+        font-size: 28px;
+        transition: 0.3s ease-out;
+
+        &:hover {
+          color: $hover-color;
+          width: 45px;
+        height: 45px;
+          transition: 0.3s ease-out;
+          border: 3px solid $hover-color;
+        }
+      }
+    }
+  }
+}
