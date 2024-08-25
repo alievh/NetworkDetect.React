@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping, faHeart, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
 const NavbarMenu = () => {
@@ -8,7 +8,6 @@ const NavbarMenu = () => {
     <div className="navbar-menu">
         <ul className="navbar-menu_lists">
             <li><Link to="/account"><FontAwesomeIcon icon={faUser} /></Link></li>
-            <li><Link to="/wishlist"><FontAwesomeIcon icon={faHeart} /></Link></li>
             <li><Link to="/cart"><FontAwesomeIcon icon={faCartShopping} /></Link></li>
         </ul>
     </div>

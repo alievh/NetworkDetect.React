@@ -23,11 +23,6 @@ const SingleProduct: React.FC<{
               <FontAwesomeIcon icon={faPlus} />
             </Link>
           </div>
-          <div className="single-product_actions-wishlist">
-            <Link to="#">
-              <FontAwesomeIcon icon={faHeart} />
-            </Link>
-          </div>
         </div>
       </div>
       <div className="single-product_about">

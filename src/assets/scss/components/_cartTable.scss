@@ -1,0 +1,55 @@
+@import "../abstracts/variables";
+
+.cart-content {
+  &_table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+
+    tr {
+      th {
+        color: $base-font-color;
+        font-weight: 400;
+      }
+
+      &:first-child {
+        position: relative;
+
+        &:after {
+          content: "";
+          display: block;
+          height: 1px;
+          width: 100%;
+          background-color: $color-grey-1;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+      }
+
+      td {
+        img {
+          width: 90px;
+        }
+
+        span {
+          margin-left: 20px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &-remove {
+      a {
+        color: $base-font-color;
+        transition: 0.3s ease-out;
+        font-size: 20px;
+
+        &:hover {
+          color: red;
+          transition: 0.3s ease-in;
+        }
+      }
+    }
+  }
+}
