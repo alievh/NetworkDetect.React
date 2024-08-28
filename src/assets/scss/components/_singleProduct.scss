@@ -92,10 +92,15 @@
       height: 50px;
       margin: 0 5px;
 
-      a {
+      p{
+        color: $white;
+      }
+
+      button {
         @include flex(center, center);
         width: 0px;
         height: 0px;
+        background-color: transparent;
         border: 3px solid $white;
         border-radius: 50%;
         text-decoration: none;

@@ -8,8 +8,8 @@ const Authorization = () => {
   return (
     <Container>
         <Row className="d-flex align-items-center">
-            <SignIn></SignIn>
-            <SignUp></SignUp>
+            <SignIn />
+            <SignUp />
         </Row>
     </Container>
   )
